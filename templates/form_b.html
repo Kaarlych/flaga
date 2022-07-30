@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div>  
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align:center">ANKIETA MUZYCZNA</h1>
+        <br>
+        <br>
+        <form style="text-align:center" action="" method="post">
+        
+            {{ form.csrf_token() }}
+                
+            <p><b>{{ form.link_muzyka.label }}</b></p>
+            <p>{{ form.link_muzyka}}</p>
+
+            <p>{{form.button}}</p>
+
+                
+    
+
+        </form>
+    </div>
+
+{% endblock %}
